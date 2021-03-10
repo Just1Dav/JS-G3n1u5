@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 
 import * as routes from "./common/routes";
+
+import EndGame from "./views/EndGame";
 import Gaming from "./views/Gaming";
 import Ranking from "./views/Ranking";
 import StartGame from "./views/StartGame";
@@ -17,6 +19,7 @@ const Routes = () => (
       <Route exact path={routes.START} component={StartGame} />
       <Route exact path={routes.GAMING} component={Gaming} />
       <Route exact path={routes.RANKING} component={Ranking} />
+      <Route exact path={routes.END_GAME} component={EndGame} />
       <Route component={() => <Redirect to={routes.START} />} />
     </Switch>
   </Router>

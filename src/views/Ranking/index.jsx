@@ -7,6 +7,7 @@ import orderBy from "lodash.orderby";
 import Text from "../../components/Text";
 import PageContainer from "../../components/PageContainer";
 import View from "../../components/View";
+import * as routes from "../../common/routes";
 
 import BackIcon from "../../assets/back.svg";
 import baseUrl from "../../common/baseUrl";
@@ -27,7 +28,7 @@ const Ranking = () => {
   }
 
   function goBack() {
-    history.goBack();
+    history.push(routes.START);
   }
 
   return (

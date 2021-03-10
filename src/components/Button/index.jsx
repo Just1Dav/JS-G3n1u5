@@ -35,6 +35,10 @@ const Button = styled.button`
   &:hover {
     cursor: pointer;
   }
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #99a8b2;
+  }
 `;
 
 Button.propTypes = {
