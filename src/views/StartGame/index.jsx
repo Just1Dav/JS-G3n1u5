@@ -12,18 +12,18 @@ import RankingImage from "../../assets/ranking.svg";
 const StartGame = () => {
   let history = useHistory();
 
-  const handleClick = () => {
+  function handleClick() {
     history.push(routes.GAMING);
-  };
+  }
 
   return (
     <>
       <PageContainer>
         <View main justifyContent="space-between">
           <View flexDirection="row" justifyContent="flex-end">
-            <img width={32} src={RankingImage} />
+            <img alt="Ícone de ranking" width={32} src={RankingImage} />
           </View>
-          <img width={225} src={LogoImage} />
+          <img alt="Logo principal do JS Genius" width={225} src={LogoImage} />
           <Button onClick={() => handleClick()}>Iniciar Jogo</Button>
         </View>
       </PageContainer>
