@@ -123,3 +123,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+img {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #dedede;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #b5b5b5;
+}

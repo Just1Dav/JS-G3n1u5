@@ -8,15 +8,16 @@ const MainMixin = css`
 
 const View = styled.div`
   display: flex;
-  width: -webkit-fill-available;
+  width: ${(props) => props.width && "-webkit-fill-available"};
   flex-direction: ${(props) => props.flexDirection};
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
-  ${(props) => props.main && MainMixin}
+  ${(props) => props.main && MainMixin};
 `;
 
 View.propTypes = {
   main: propTypes.bool,
+  width: propTypes.bool,
   alignItems: propTypes.string,
   justifyContent: propTypes.string,
   flexDirection: propTypes.string,
@@ -24,6 +25,7 @@ View.propTypes = {
 
 View.defaultProps = {
   main: false,
+  width: true,
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
