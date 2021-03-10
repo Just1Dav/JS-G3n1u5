@@ -67,7 +67,6 @@ const EndGame = () => {
             </Text>
           </View>
           <Margin top={8} />
-
           <View>
             <Input
               type="text"

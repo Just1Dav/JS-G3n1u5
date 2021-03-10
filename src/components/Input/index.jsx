@@ -16,6 +16,7 @@ const Input = styled.input`
   width: 100%;
   box-sizing: border-box;
   height: 80px;
+  max-width: 320px;
   font-family: "Roboto", sans-serif;
   background-color: transparent;
   border: ${(props) => `3px solid ${props.borderColor}`};
