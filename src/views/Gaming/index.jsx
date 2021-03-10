@@ -1,15 +1,15 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { Margin } from "styled-components-spacing";
 
-import Button from "../../components/Button";
 import PageContainer from "../../components/PageContainer";
 import View from "../../components/View";
 import * as routes from "../../common/routes";
 
-import LogoImage from "../../assets/logo.svg";
-import RankingImage from "../../assets/ranking.svg";
+import NumberViewer from "../../components/NumberViewer";
+import NumberPad from "../../components/NumberPad";
 
-const StartGame = () => {
+const Gaming = () => {
   let history = useHistory();
 
   const handleClick = () => {
@@ -20,15 +20,14 @@ const StartGame = () => {
     <>
       <PageContainer>
         <View main justifyContent="space-between">
-          <View flexDirection="row" justifyContent="flex-end">
-            <img width={32} src={RankingImage} />
-          </View>
-          <img width={225} src={LogoImage} />
-          <Button onClick={() => handleClick()}>Iniciar Jogo</Button>
+          <Margin top={7} />
+          <NumberViewer number={2} />
+          <Margin top={11} />
+          <NumberPad />
         </View>
       </PageContainer>
     </>
   );
 };
 
-export default StartGame;
+export default Gaming;

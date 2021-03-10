@@ -4,20 +4,27 @@ import Text from "../Text";
 
 const Container = styled.div`
   display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: ${(props) =>
     props.flexDirection ? props.flexDirection : "row"};
-  box-sizing: border-box;
   border-radius: 5px;
+
+  @media (min-width: 768px) {
+    max-width: 70%;
+    height: 50%;
+  }
 `;
 
 const Number = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 109px;
-  height: 109px;
+  width: 100%;
+  height: 100%;
   border: 3px solid #1f6f8b;
   background-color: transparent;
   &:active {

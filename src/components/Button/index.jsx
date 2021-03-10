@@ -20,6 +20,7 @@ const Button = styled.button`
   font-family: "Roboto", sans-serif;
   height: 80px;
   width: 100%;
+  max-width: 320px;
   border: ${(props) => `3px solid ${props.borderColor}`};
   text-transform: capitalize;
 

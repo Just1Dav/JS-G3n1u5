@@ -8,6 +8,7 @@ const Border = styled.div`
   justify-content: center;
   width: 150px;
   height: 150px;
+  min-height: 150px;
   border: 3px solid #e6d5b8;
   box-sizing: border-box;
   border-radius: 5px;
